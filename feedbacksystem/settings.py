@@ -87,10 +87,10 @@ WSGI_APPLICATION = 'feedbacksystem.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'postgres',
-        'USER' : 'postgres.uzcxavncmviaxcybhfsd',
-        'PASSWORD': 'Eswarsai@2005',
-        'HOST': 'aws-0-ap-southeast-1.pooler.supabase.com',
+        'NAME': os.environ.get('POSTGRES_DB', 'mydb'),
+        'USER' : os.environ.get('POSTGRES_USER', 'user'),
+        'PASSWORD': os.environ.get('POSTGRES_PASSWORD', 'password'),
+        'HOST': 'db',
         'PORT': '5432',
     }
 }
