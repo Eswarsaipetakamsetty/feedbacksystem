@@ -57,9 +57,19 @@ A role-based feedback platform where employees can submit self-feedback, and man
 
 ## 📂 Project Structure
 
-<pre> ``` feedbacksystem/ ├── activity/ ├── feedback/ ├── team/ ├── userauth/ ├── feedbacksystem/ # Main Django project ├── manage.py ├── Dockerfile ├── docker-compose.yml ├── requirements.txt ``` </pre>
+```text
+feedbacksystem/
+├── activity/
+├── feedback/
+├── team/
+├── userauth/
+├── feedbacksystem/        # Main Django project
+├── manage.py
+├── Dockerfile
+├── docker-compose.yml
+├── requirements.txt
+```
 
----
 
 ## 🐳 Running with Docker
 
